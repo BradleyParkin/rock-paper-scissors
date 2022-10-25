@@ -43,6 +43,9 @@ function makeSelection(selection){
 
     addSelectionResult(computerSelection, computerWinner)
     addSelectionResult(selection, yourWinner)
+
+    if (yourWinner) incrementScore(yourScoreSpan)
+    if (computerWinner) incrementScore(computerScoreSpan)
 }
 
 function isWinner(selection, opponentSelection) {
@@ -64,4 +67,12 @@ function addSelectionResult(selection, winner) {
     div.classList.add('result-selection')
     if (winner) div.classList.add('winner')
     final.after(div)
+}
+
+/**
+ * Fuction for incrementing the score of the game
+ */
+
+function incrementScore(scoreSpan) {
+    scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
 }
