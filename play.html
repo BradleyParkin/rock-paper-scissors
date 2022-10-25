@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Rock | Paper | Scissors</title>
-    <script src="script.js" defer></script>
+    <script src="/assets/javascript/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,10 +30,10 @@
             </ul>
         </nav>
     </header>
-    <div class="choices">
-        <button class="choice"> <img src="/assets/images/rock.png" alt="picutre of a hand in a rock shape"></button>
-        <button class="choice"> <img src="/assets/images/paper.png" alt="pitcure of a hand in a paper shape"></button> 
-        <button class="choice"> <img src="/assets/images/scissors.png" alt="pitcure of a hand in a scissors page"></button>    
+    <div class="selections">
+        <button class="selection" data-selection="rock"> <img src="/assets/images/rock.png" alt="picutre of a hand in a rock shape"></button>
+        <button class="selection" data-selection="paper"> <img src="/assets/images/paper.png" alt="pitcure of a hand in a paper shape"></button> 
+        <button class="selection" data-selection="scissors"> <img src="/assets/images/scissors.png" alt="pitcure of a hand in a scissors page"></button>    
     </div>
     <div class="scores">
         <div>
@@ -44,6 +44,8 @@
             Computer
             <span class="result-score">0</span>
         </div>
+        <!--<div class="result-selection winner"> <img src="/assets/images/rock.png" alt="picutre of a hand in a rock shape"></div>
+        <div class="result-selection"> <img src="/assets/images/scissors.png" alt="pitcure of a hand in a scissors page"></div> -->
 
     </div>
 </body>
