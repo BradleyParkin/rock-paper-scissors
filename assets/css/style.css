@@ -13,7 +13,7 @@ body {
     color: black;
 }
 
-/** Code below is for the top title of the page (Rock | Paper | Scissors) and its positioning on the page **/
+/**  top title of the page (Rock | Paper | Scissors) and its positioning on the page **/
 
 #title-of-page {
     text-align: center;
@@ -21,7 +21,7 @@ body {
     letter-spacing: 3px;
 }
 
-/** code below is for the buttons to choose which page you want to visit on the site (Home, Play or Feedback) **/
+/**  buttons to choose which page you want to visit on the site (Home, Play or Feedback) **/
 
 #menu {
     text-align: center;
@@ -29,14 +29,14 @@ body {
     letter-spacing: 3px;
 }
 
-/** code below is for the text (can you beat the computer and also the rules of the game) **/
+/**  text (can you beat the computer and also the rules of the game) **/
 
 #question, #rules {
     text-align: center;
     padding-top: 25px;
 }
 
-/** code to create your username form **/
+/**  create your username form **/
 
 #username {
     text-align: center;
@@ -44,7 +44,7 @@ body {
     padding-top: 50px;
 }
 
-/** Code for the play buttons **/
+/** play buttons of rock, paper or scissors **/
 
 .selections {
     display: flex;
@@ -64,7 +64,7 @@ body {
     transform: scale(1.1);
 }
 
-/** code for scores **/
+/** scores of the game **/
 
 .scores {
     margin-top: 1rem;
@@ -89,6 +89,63 @@ body {
 .result-selection.winner {
     opacity: 1;
     font-size: 3rem;
+}
+
+/** feedback form **/
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+form {
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: auto;
+    resize: none;
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: lightblue;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.error {
+    color: red;
+}
+
+#success {
+    color: green;
 }
 
 
