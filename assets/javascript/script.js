@@ -20,9 +20,9 @@ const SELECTIONS = [
     },
 ]
 
-/**
- * selector button below to chose which button comes first
- */
+
+// selector button below to chose which button comes first
+ 
 selectionButtons.forEach(selectionButton => {
     selectionButton.addEventListener('click', e =>{
         const selectionName = selectionButton.dataset.selection
@@ -31,9 +31,9 @@ selectionButtons.forEach(selectionButton => {
     })
 })
 
-/**
- * function below is to where it works out which player will win, either player or computer automatically generated
- */
+
+// function below is to where it works out which player will win, either player or computer automatically generated
+ 
 
 function makeSelection(selection){
     const computerSelection = randomSelection()
@@ -57,9 +57,9 @@ function randomSelection() {
     return SELECTIONS[randomIndex]
 }
 
-/**
- * fuction here is to show the winning image below the score.
- */
+
+ //fuction here is to show the winning image below the score.
+ 
 
 function addSelectionResult(selection, winner) {
     const div = document.createElement('div')
@@ -69,10 +69,58 @@ function addSelectionResult(selection, winner) {
     final.after(div)
 }
 
-/**
- * Fuction for incrementing the score of the game
- */
+
+ //Fuction for incrementing the score of the game
+ 
 
 function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
+}
+
+
+ //Fuction for the feedback form for players to pass on feedback of the game
+ 
+
+//Get data
+const nameInput = document.querySelector('#name');
+const email = document.querySelector('#email');
+const feedback = document.querySelector('#feedback');
+const success = document.querySelector('#success');
+const errorNodes = document.querySelectorAll('.error');
+
+// Validate data
+function validateForm(){
+    
+    clearMessages();
+    
+    if(nameInput.value.length < 1){
+        errorNodes[0].innerText = "Name cannot be blank"; 
+        nameInput.classList.add("error-border");
+    }
+
+    if(!emailIsValid(email.value)){
+        errorNodes[1].innerText = "Invalid email address"; 
+        email.classList.add("error-border");
+    }
+
+    if(feedback.value.length < 1){
+        errorNodes[2].innerText = "Please enter your feedback"; 
+        feedback.classList.add("error-border");
+    }
+}
+
+
+// clear the error or success messages
+function clearMessages(){
+    for(let i = 0; i < errorNodes.length; i++){
+        errorNodes[i].innerText = "";
+    }
+    nameInput.classList.remove("error-border");
+    email.classList.remove("error-border"); 
+}
+
+// this will check if the email the user is entering is a valid email address
+function emailIsValid(email){
+    let pattern = /\S+@\S+\.\S+/;
+    return pattern.test(email);
 }

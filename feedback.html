@@ -33,7 +33,7 @@
 
 <!-- Below is html structure for the feedback form -->    
         <div id="overlay">
-            <form>
+            <form onsubmit="event.preventDefault(); validateForm()">
                 <h1>Give us your Feedback</h1>
 
                 <label for="name">Name:</label>
