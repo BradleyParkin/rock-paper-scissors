@@ -1,3 +1,5 @@
+/** DESIGN FOR FIRST PAGE **/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 * {
@@ -30,12 +32,8 @@ body {
 }
 
 #home, #play, #feedback {
-    background-color: white;
-    color: black;
     text-decoration: none;
     text-transform: uppercase;
-    padding-top: 5px;
-
 }
 
 /**  text (can you beat the computer and also the rules of the game) **/
@@ -55,26 +53,10 @@ body {
     padding: 40px;
     border-radius: 3px;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
-#rules {
-    max-width: 550px;
-    width: 90%;
-    background: white;
-    margin: 17vh auto 0 auto;
-    padding: 5px;
-    border-radius: 3px;
-    box-sizing: border-box;
-    padding-bottom: 25px;
-}
-
-/**  create your username form **/
-
-#username {
-    text-align: center;
-    letter-spacing: 3px;
-    padding-top: 50px;
-}
+/** DESIGN OF PLAY PAGE **/
 
 /** play buttons of rock, paper or scissors **/
 
@@ -128,6 +110,8 @@ body {
     opacity: 1;
     font-size: 3rem;
 }
+
+/** FEEDBACK PAGE **/
 
 /** feedback form **/
 
@@ -194,5 +178,9 @@ input[type="submit"] {
     color: green;
 }
 
+/** media query **/
+
+@media only screen and (max-width: 798px) {
+}
 
 
