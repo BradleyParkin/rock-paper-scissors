@@ -32,7 +32,7 @@ selectionButtons.forEach(selectionButton => {
 });
 
 
-// function below is to where it works out which player will win, either player or computer automatically generated
+// function below is to where it works out which player will win, either player or computer or a draw automatically generated
  
 
 function makeSelection(selection){

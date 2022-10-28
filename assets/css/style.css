@@ -29,11 +29,43 @@ body {
     letter-spacing: 3px;
 }
 
+#home, #play, #feedback {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 5px;
+
+}
+
 /**  text (can you beat the computer and also the rules of the game) **/
 
 #question, #rules {
     text-align: center;
     padding-top: 25px;
+}
+
+/** design of the front page information **/
+
+#question {
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#rules {
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 5px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-bottom: 25px;
 }
 
 /**  create your username form **/
@@ -46,10 +78,16 @@ body {
 
 /** play buttons of rock, paper or scissors **/
 
+#choose-your-hand {
+    text-align: center;
+    padding: 1%;
+}
+
 .selections {
     display: flex;
     padding-top: 25px;
     justify-content: center;
+    border-color: black;
 }
 
 .selection {
@@ -93,7 +131,7 @@ body {
 
 /** feedback form **/
 
-#overlay {
+#main {
     padding-bottom: 50px;
 }
 
