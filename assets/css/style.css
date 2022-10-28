@@ -58,6 +58,96 @@ body {
 
 /** DESIGN OF PLAY PAGE **/
 
+/* --------- Game layout */
+
+.heading {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.game-area {
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.answer-area {
+    width: 50%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.controls-area {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/** buttons for play page **/
+
+.button-rock {
+    width: 220px;
+    height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+    background-color:lightblue;
+    cursor: pointer;
+}
+
+.button-rock:hover {
+    font-size: 20px;
+}
+
+.button-paper {
+    width: 220px;
+    height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+    background-color:lightblue;
+    cursor: pointer;
+}
+
+.button-paper:hover {
+    font-size: 20px;
+}
+
+.button-scissors {
+    width: 220px;
+    height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+    background-color:lightblue;
+    cursor: pointer;
+}
+
+.button-scissors:hover {
+    font-size: 20px;
+}
+
+
+/** scores **/
+
+.scores {
+    padding: 25px;
+    text-align: center;
+}
+
 
 
 
