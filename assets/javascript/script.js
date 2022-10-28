@@ -16,8 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
 /** Run Game */
 
 function runGame() {
+    let game = Math.floor(Math.random() * 2);
 
 }
+
 
 /** Check Answer */
 
