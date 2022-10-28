@@ -58,58 +58,29 @@ body {
 
 /** DESIGN OF PLAY PAGE **/
 
-/** play buttons of rock, paper or scissors **/
 
-#choose-your-hand {
-    text-align: center;
-    padding: 1%;
-}
 
-.selections {
-    display: flex;
-    padding-top: 25px;
-    justify-content: center;
-    border-color: black;
-}
 
-.selection {
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: 200ms;
-}
 
-.selection:hover {
-    transform: scale(1.1);
-}
 
-/** scores of the game **/
 
-.scores {
-    margin-top: 1rem;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    font-size: 3rem;
-}
 
-.result-score {
-    margin-left: 1rem;
-    font-size: 3rem;
 
-}
 
-.result-selection {
-    opacity: .3;
-}
 
-.result-selection.winner {
-    opacity: 1;
-    font-size: 3rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /** FEEDBACK PAGE **/
 
