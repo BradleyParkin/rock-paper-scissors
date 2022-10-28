@@ -33,24 +33,20 @@
 <!-- structure of game -->
     <h2 class="heading">Can you beat the computer? Press one of the buttons to find out!</h2>
 
-    <div class="game-area">
+    <section class="game-area">
         <div class="controls-area">
-            <button data-type="rock" class="button-rock">ROCK</button>
-            <button data-type="paper" class="button-paper">PAPER</button>
-            <button data-type="scissors" class="button-scissors">SCISSORS</button>
+            <button aria-label="Rock" data-choice="0" class="button-rock">ROCK</button>
+            <button aria-label="Paper" data-choice="1"class="button-paper">PAPER</button>
+            <button aria-label="Scissors" data-choice="2" class="button-scissors">SCISSORS</button>
         </div>
-        <div class="answer-area">
-            <span id="rock" img src="/assets/images/rock.jpg"></span>
-            <span id="paper"img src="/assets/images/paper.jpg"></span>
-            <span id="scissor"img src="/assets/images/scissors.jpg"></span>
-        </div>
-
-    </div>
-
-    <div class="score-area">
-        <p class="scores">You: <span id="Score">0</span></p>
-        <p class="scores">Computer: <span id="Computer">0</span></p>
-        
-    </div>
+       <div class="you">
+            <h2 class="score">Your Score: <span id="your-score">0</span></h2>
+            <img id="your-image" src="assets/images/rps.jpg" alt="image of rock, paper or scissors">
+       </div>
+       <div class="computer">
+            <h2 class="score">Computer Score: <span id="computer-score">0</span></h2>
+            <img id="computer-image" src="assets/images/rps.jpg" alt="image of rock, paper or scissors">
+       </div>
+    </section>
 </body>
 </html>

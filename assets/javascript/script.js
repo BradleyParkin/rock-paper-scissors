@@ -1,41 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
+// declare the constants for the DOM elements and what choices the player has
 
-    for (let button of buttons){
-        button.addEventListener("click", function(){
-            if(this.getAttribute("data-type") === "submit") {
-                alert("You clicked submit!");
-            } else {
-                let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
-            }
-        })    
-    }
-})
-
-/** Run Game */
-
-function runGame() {
-    let game = Math.floor(Math.random() * 2);
-
-}
+const buttons = document.getElementsByClassName("controls-area");
+const yourScore = document.getElementById("your-score");
+const computerScore = document.getElementById("computer-score");
+const yourImage = document.getElementById("your-image");
+const computerImage = document.getElementById("computer-image");
+const choices = ["Rock", "Paper", "Scissors"];
 
 
-/** Check Answer */
+// event listener to all buttons on the page
 
-function checkAnswer() {
-
-}
-
-/** Increment Score */
-
-function incrementScore() {
-
-}
-
-/** Increment Computer Score */
-
-function incrementComputerScore() {
-
+for (let button of buttons) {
+    button.addEventListener("click", function() {
+        let yourChoice = this.getAttribute("data-choice");
+        playGame(yourChoice);
+    });
 }
 

@@ -58,7 +58,7 @@ body {
 
 /** DESIGN OF PLAY PAGE **/
 
-/* --------- Game layout */
+/* Game layout */
 
 .heading {
     text-align: center;
@@ -143,10 +143,7 @@ body {
 
 /** scores **/
 
-.scores {
-    padding: 25px;
-    text-align: center;
-}
+
 
 
 
