@@ -38,7 +38,7 @@ function validateForm(){
 }
 
 
-// clear the error or success messages
+// clear the error / success messages
 function clearMessages(){
     for(let i = 0; i < errorNodes.length; i++){
         errorNodes[i].innerText = "";
@@ -55,11 +55,11 @@ function emailIsValid(email){
     return pattern.test(email);
 }
 
-// clear data entered into the form once submitted
+// clear form once it has been submitted 
 
 const form = document.getElementById('my_form');
 
-form.addEventListener('submit', function handleSubmit(event) {
+form.addEventListener('submit', function handleSubmit(event){
     event.preventDefault();
 
     form.reset();
