@@ -1,15 +1,19 @@
 const selectionButtons = document.querySelectorAll('[data-selection');
+const computer = document.querySelector('[data-computer]')
 const SELECTIONS = [
     {
         name: 'rock',
+        icon: '🤘',
         beats: 'scissors'
     },
     {
         name: 'paper',
+        icon: '📜',
         beats: 'rock'
     },
     {
         name: 'scissors',
+        icon: '✂️',
         beats: 'paper'
     }
 ]
@@ -27,11 +31,32 @@ selectionButtons.forEach(selectionButton => {
 // function below is to where it works out which player will win, either player or computer automatically generated
 
 function makeSelection(selection) {
-    console.log(selection)
+    const computerSelection = randomSelection()
+    const yourSuccess = isSuccess(selection, computerSelection)
+    const computerSuccess = isSuccess(computerSelection, selection)
+    
+    addSelectionResult(computerSelection, computerSuccess)
+    addSelectionResult(selection, yourSuccess)
+}
+
+function isSuccess(selection, oppositionSelection) {
+    return selection.beats === oppositionSelection.name
 }
 
 function randomSelection() {
     const randomIndex = Math.floor(Math.random() * SELECTIONS.length)
+    return SELECTIONS[randomIndex]
+}
+
+// success results
+
+function addSelectionResult(selection, success) {
+    const div = document.createElement('div')
+    div.innerText = selection.icon
+    div.classList.add('result-selection')
+    if(success) div.classList.add('winner')
+    computer.after(div)
+
 }
 
 

@@ -111,6 +111,7 @@ body {
 
 .result-selection {
     opacity: 50%;
+    font-size: 200px;
 }
 
 .result-selection.winner {
