@@ -1,10 +1,8 @@
 // declare the constants for the DOM elements and what choices the player has
 
 const buttons = document.getElementsByClassName("controls-area");
-const yourScore = document.getElementById("your-score");
+const playerScore = document.getElementById("your-score");
 const computerScore = document.getElementById("computer-score");
-const yourImage = document.getElementById("your-image");
-const computerImage = document.getElementById("computer-image");
 const choices = ["Rock", "Paper", "Scissors"];
 
 
@@ -12,8 +10,17 @@ const choices = ["Rock", "Paper", "Scissors"];
 
 for (let button of buttons) {
     button.addEventListener("click", function() {
-        let yourChoice = this.getAttribute("data-choice");
-        playGame(yourChoice);
+        let playerChoice = this.getAttribute("data-choice");
+        playGame(playerChoice);
     });
+}
+
+// function of main game
+
+function playGame(yourChoice) {
+    let computerChoice = Math.floor(Math.random() * 3);
+    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+
+    updateScores(result);
 }
 

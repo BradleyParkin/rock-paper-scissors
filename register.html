@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Rock | Paper | Scissors</title>
+    
 </head>
 <body>
     <header>
@@ -24,16 +25,16 @@
                     <a href="play.html">Play</a>
                 </li>
                 <li id="feedback">
-                    <a href="feedback.html">Feedback</a>
+                    <a href="register.html">Register</a>
                 </li>   
             </ul>
         </nav>
     </header>
 
-<!-- Below is html structure for the feedback form -->    
+<!-- Below is html structure for the register form -->    
         <div id="main">
-            <form  id="my_form" onsubmit="event.preventDefault(); validateForm()">
-                <h1>Give us your Feedback</h1>
+            <form  id="my_form" onsubmit="event.preventDefault(); validateForm()" method="POST">
+                <h1>Register for more interesting games!</h1>
 
                 <label for="name">Name:</label>
                 <input type="text" id="name" placeholder="Your Name">
@@ -43,16 +44,12 @@
                 <input type="text" id="email" placeholder="Your Email">
                 <small class="error"></small>
 
-                <label for="feedback">Feedback:</label>
-                <textarea id="feedback" placeholder="Your Feedback" rows="6"></textarea>
-                <small class="error"></small>
-
                 <div class="center">
-                    <input type="submit" value="Send Feedback">
+                    <input type="submit" value="Register">
                     <p id="success"></p>
                 </div>
             </form>
         </div>
-    <script src="/assets/javascript/form.js"></script>    
+    <script src="/assets/javascript/form.js" ></script>  
 </body>
 </html>

@@ -1,10 +1,8 @@
- //Fuction for the feedback form for players to pass on feedback of the game
+ //Fuction for the register form for players to register for new game releases
  
-
 //Get data
 const nameInput = document.querySelector('#name');
 const email = document.querySelector('#email');
-const feedback = document.querySelector('#feedback');
 const success = document.querySelector('#success');
 const errorNodes = document.querySelectorAll('.error');
 
@@ -23,16 +21,11 @@ function validateForm(){
     if(!emailIsValid(email.value)){
         errorNodes[1].innerText = "Invalid email address"; 
         email.classList.add("error-border");
-    }
-
-    if(feedback.value.length < 1){
-        errorNodes[2].innerText = "Please enter your feedback"; 
-        feedback.classList.add("error-border");
         errorFlag = true;
     }
 
     if(!errorFlag){
-        success.innerText = "You have submitted your feedback! Thank you!";
+        success.innerText = "Thank you for registering!";
     }
     
 }
@@ -45,8 +38,7 @@ function clearMessages(){
     }
     success.innerText = "";
     nameInput.classList.remove("error-border");
-    email.classList.remove("error-border"); 
-    feedback.classList.remove("error-border"); 
+    email.classList.remove("error-border");  
 }
 
 // this will check if the email the user is entering is a valid email address

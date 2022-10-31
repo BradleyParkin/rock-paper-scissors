@@ -140,38 +140,19 @@ body {
     font-size: 20px;
 }
 
-
 /** scores **/
 
+.score1 {
+    float: left;
+}
 
+.score2 {
+    float: right;
+}
 
+/** FORM PAGE **/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/** FEEDBACK PAGE **/
-
-/** feedback form **/
+/** register form **/
 
 #main {
     padding-bottom: 50px;
