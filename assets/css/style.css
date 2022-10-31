@@ -119,20 +119,6 @@ body {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** FORM PAGE **/
 
 /** register form **/
@@ -200,8 +186,11 @@ input[type="submit"] {
     color: green;
 }
 
-/** media query **/
+/** restart game button **/
 
+.submit {
+    text-align: center;
+}    
 
 
 
