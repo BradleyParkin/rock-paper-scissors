@@ -80,17 +80,17 @@ body {
 
 /* buttons */
 
-.controls-area {
+.selections {
     display: flex;
     justify-content: center;
 }
 
-.button {
+.selection {
     cursor: pointer;
     transition: 150ms;
 }
 
-.button:hover {
+.selection:hover {
     transform: scale(1.02);
 }
 
@@ -100,10 +100,23 @@ body {
     margin-top: 20px;
     display: grid;
     justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     justify-items:center;
     align-items: center;
 }
 
+.result-score {
+    margin-left: 10px;
+}
+
+.result-selection {
+    opacity: 50%;
+}
+
+.result-selection.winner {
+    opacity: 100%;
+
+}
 
 
 
