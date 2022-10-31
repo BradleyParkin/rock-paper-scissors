@@ -67,88 +67,57 @@ body {
 }
 
 .game-area {
-    background-color: #E6ECF0;
+    background-color: white;
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
-    max-height: 450px;
-    max-width: 830px;
+    height: 100%;
+    max-height: 100%;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
 }
 
-.answer-area {
-    width: 50%;
-    font-size: 2rem;
-    margin: auto;
-    padding: 50px 0;
-}
-
-.score-area {
-    margin: 5px auto;
-    width: 60%;
-    font-size: 1.2rem;
-}
+/* buttons */
 
 .controls-area {
-    width: 85%;
-    margin: 30px auto;
+    display: flex;
+    justify-content: center;
 }
 
-/** buttons for play page **/
-
-.button-rock {
-    width: 220px;
-    height: 60px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: black;
-    background-color:lightblue;
+.button {
     cursor: pointer;
+    transition: 150ms;
 }
 
-.button-rock:hover {
-    font-size: 20px;
+.button:hover {
+    transform: scale(1.02);
 }
 
-.button-paper {
-    width: 220px;
-    height: 60px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: black;
-    background-color:lightblue;
-    cursor: pointer;
+/* scores */
+
+.results {
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    justify-items:center;
+    align-items: center;
 }
 
-.button-paper:hover {
-    font-size: 20px;
-}
 
-.button-scissors {
-    width: 220px;
-    height: 60px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: black;
-    background-color:lightblue;
-    cursor: pointer;
-}
 
-.button-scissors:hover {
-    font-size: 20px;
-}
 
-/** scores **/
 
-.score1 {
-    float: left;
-}
 
-.score2 {
-    float: right;
-}
+
+
+
+
+
+
+
+
+
 
 /** FORM PAGE **/
 
