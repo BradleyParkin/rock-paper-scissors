@@ -119,6 +119,25 @@ body {
 
 }
 
+/** restart game button **/
+
+#restart {
+   font-size: 16px;
+   cursor: pointer;
+   transition: 150ms;
+   background-color: white;
+   border-radius: 50px;
+   width: 33%;
+   margin-left: 33%;
+   margin-bottom: 2%;
+   margin-top: 2%;
+}
+
+#restart:hover {
+    transform: scale(1.02);
+}
+
+
 /** FORM PAGE **/
 
 /** register form **/
@@ -192,5 +211,16 @@ input[type="submit"] {
     text-align: center;
 }    
 
+/** Media Query **/
+
+@media only screen and (max-width: 1116px) {
+    .game-area {
+        max-width: 80%;
+    }
+
+    .selections {
+        max-width: 80%;
+    }
+}
 
 
