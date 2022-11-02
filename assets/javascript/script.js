@@ -70,3 +70,10 @@ function increaseScore(scoreSpan) {
 }
 
 
+
+
+
+
+
+
+
