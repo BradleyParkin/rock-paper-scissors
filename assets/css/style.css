@@ -244,7 +244,17 @@ input[type="submit"] {
         max-width: 80%;
     }
 
-    #picture1, #picture2, #picture2 {
+    #picture1 {
+        height: 80%;
+        width: 80%;
+    }
+
+    #picture2 {
+        height: 80%;
+        width: 80%;
+    }
+
+    #picture3 {
         height: 80%;
         width: 80%;
     }

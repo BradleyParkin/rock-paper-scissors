@@ -55,7 +55,7 @@ function randomSelection() {
 
 // success results
 
-function addSelectionResult(selection, success) {;
+function addSelectionResult(selection, success) {
     const div = document.createElement('div');
     div.innerText = selection.icon;
     div.classList.add('result-selection');
