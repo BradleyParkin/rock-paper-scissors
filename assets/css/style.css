@@ -94,6 +94,11 @@ body {
     transform: scale(1.02);
 }
 
+#picture {
+    height: 350px;
+    width: 300px;
+}
+
 /* scores */
 
 .results {
@@ -218,9 +223,21 @@ input[type="submit"] {
         max-width: 80%;
     }
 
-    .selections {
-        max-width: 80%;
+    #picture {
+        height: 80%;
+        width: 80%;
+    }
+
+    .result-selection {
+        font-size: 3rem;
     }
 }
+
+@media only screen and (max-width: 714px) {
+    .results {
+        grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
+    }
+}
+
 
 
