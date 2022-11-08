@@ -21,4 +21,7 @@ Users of this website will be able to find information on 3 different pages, a H
 ![Header Image](/assets/images/header.png)
 
 * **Home Page Content**
-    * 
+    * The "Welcome to Rock, Paper, Scissors! Can you beat the Computer? If you can, press PLAY!" is the introduction to the page, welcoming the user to the page and asking if they can beat the computer, press the play button to Play. This question is great for the user as it asks them to do something, ie press the play button to start. It makes it clear on what they need to do.
+    * The rules of the page are there for clear, easy to ready instructions of how the game works and what is included. This is important to the user as if they didnt know how to play rock, paper, scissors they can clearly see how to. This page has clear contrasting colours between the text and the background to make it easy to read on all devices. 
+
+![Home Page Image](/assets/images/home%20page.png)
